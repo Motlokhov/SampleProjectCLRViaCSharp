@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessLibliary", "AccessLib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalAccessLibliary", "ExternalAccessLibliary\ExternalAccessLibliary.csproj", "{28A38BB6-F407-4FAF-9083-5D2B18142403}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendlyAccessLibliary", "FriendlyAccessLibliary\FriendlyAccessLibliary.csproj", "{A9FFA830-70DA-41F6-B6DB-446D29A46A57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{28A38BB6-F407-4FAF-9083-5D2B18142403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28A38BB6-F407-4FAF-9083-5D2B18142403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28A38BB6-F407-4FAF-9083-5D2B18142403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9FFA830-70DA-41F6-B6DB-446D29A46A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9FFA830-70DA-41F6-B6DB-446D29A46A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9FFA830-70DA-41F6-B6DB-446D29A46A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9FFA830-70DA-41F6-B6DB-446D29A46A57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

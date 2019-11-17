@@ -5,15 +5,14 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("ExternalAccessLibliary")]
+[assembly: AssemblyTitle("FriendlyAccessLibliary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExternalAccessLibliary")]
+[assembly: AssemblyProduct("FriendlyAccessLibliary")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: InternalsVisibleTo("FriendlyAccessLibliary")]
 
 // Установка значения False для параметра ComVisible делает типы в этой сборке невидимыми
 // для компонентов COM. Если необходимо обратиться к типу в этой сборке через
@@ -21,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("28a38bb6-f407-4faf-9083-5d2b18142403")]
+[assembly: Guid("a9ffa830-70da-41f6-b6db-446d29a46a57")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

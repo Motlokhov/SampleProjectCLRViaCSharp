@@ -25,7 +25,7 @@ namespace ExternalAccessLibliary
     /// </summary>
     internal class ExternalInheritedPublicClass:ClassForInheritance
     {
-        ExternalInheritedPublicClass()
+        public ExternalInheritedPublicClass()
         {
             PublicMember = "Access OK";
             _protectedMember = "Access OK";
