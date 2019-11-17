@@ -46,22 +46,48 @@
         }
 
     }
+    /// <summary>
+    /// Наследуемый класс
+    /// </summary>
+    public class InheritedClassOfPublic : PublicClass
+    {
+        InheritedClassOfPublic()
+        {
+            PublicMember = "Access OK";
+            _internalMember = "Access OK";
+            _protectedMember = "Access OK";
+            _protectedInternalMember = "Access OK";
+            _privateProtectedMember = "Access OK";
 
+            //_privateMember = "Access False"; доступен только внутри класса
+        }
+    }
 
     /// <summary>
-    /// Класс описания доступа к членам разных областей видимости
+    /// Класс описания доступа к членам разных областей видимости снаружи 
     /// </summary>
     public class AccessToMember: PublicClass
     {
         public void Access(PublicClass publicClass)
         {
             publicClass.PublicMember = "Access OK";
-            publicClass._internalMember = "Access OK";
-            publicClass._protectedInternalMember = "Access OK";
+            publicClass._internalMember = "Access OK"; //Внутри сборки
+            publicClass._protectedInternalMember = "Access OK"; //Внутри сборки
 
-            //publicClass._protectedMember = "Access False"; Класс не наследует PublicClass
-            //publicClass._privateMember = "Access False"; Член полностью закрыт для всех снаружи класса PublicClass
-            //publicClass._privateProtectedMember = "Access False"; Класс не наследует PublicClass
+            //publicClass._protectedMember = "Access False"; доступен только внутри класса
+            //publicClass._privateMember = "Access False"; доступен только внутри класса
+            //publicClass._privateProtectedMember = "Access False"; доступен только внутри класса
+        }
+
+        public void Access(InheritedClassOfPublic inheritedClass)
+        {
+            inheritedClass.PublicMember = "Access OK";
+            inheritedClass._internalMember = "Access OK"; //Наследует PublicClass
+            inheritedClass._protectedInternalMember = "Access OK"; //Наследует PublicClass
+
+            //inheritedClass._protectedMember = "Access False"; доступен только внутри класса
+            //inheritedClass._privateProtectedMember = "Access False"; доступен только внутри класса
+            //inheritedClass._privateMember = "Access False"; доступен только внутри класса
         }
     }
 
