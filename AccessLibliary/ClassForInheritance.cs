@@ -3,7 +3,7 @@
     /// <summary>
     /// Публичный класс: доступен всем сборкам снаружи
     /// </summary>
-    public class PublicClass
+    public class ClassForInheritance
     {
         /// <summary>
         /// Доступен всем кому виден класс
@@ -35,7 +35,7 @@
         {
             NestedClassOfPublic()
             {
-                var publicClass = new PublicClass();
+                var publicClass = new ClassForInheritance();
                 publicClass.PublicMember = "Access OK";
                 publicClass._internalMember = "Access OK";
                 publicClass._privateMember = "Access OK";
@@ -49,9 +49,9 @@
     /// <summary>
     /// Наследуемый класс
     /// </summary>
-    public class InheritedClassOfPublic : PublicClass
+    internal class InheritedClass : ClassForInheritance
     {
-        InheritedClassOfPublic()
+        InheritedClass()
         {
             PublicMember = "Access OK";
             _internalMember = "Access OK";
@@ -66,9 +66,9 @@
     /// <summary>
     /// Класс описания доступа к членам разных областей видимости снаружи 
     /// </summary>
-    public class AccessToMember: PublicClass
+    internal class AccessToMember
     {
-        public void Access(PublicClass publicClass)
+        public void Access(ClassForInheritance publicClass)
         {
             publicClass.PublicMember = "Access OK";
             publicClass._internalMember = "Access OK"; //Внутри сборки
@@ -79,11 +79,11 @@
             //publicClass._privateProtectedMember = "Access False"; доступен только внутри класса
         }
 
-        public void Access(InheritedClassOfPublic inheritedClass)
+        public void Access(InheritedClass inheritedClass)
         {
             inheritedClass.PublicMember = "Access OK";
-            inheritedClass._internalMember = "Access OK"; //Наследует PublicClass
-            inheritedClass._protectedInternalMember = "Access OK"; //Наследует PublicClass
+            inheritedClass._internalMember = "Access OK"; //Наследует ClassForInheritance
+            inheritedClass._protectedInternalMember = "Access OK"; //Наследует ClassForInheritance
 
             //inheritedClass._protectedMember = "Access False"; доступен только внутри класса
             //inheritedClass._privateProtectedMember = "Access False"; доступен только внутри класса
