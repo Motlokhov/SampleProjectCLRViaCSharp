@@ -44,5 +44,15 @@
     <Compile Include="ExternalAccessClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccessLibliary\AccessLibliary.csproj">
+      <Project>{3A4E607B-3599-4AA2-9DE2-022FC48C6B2B}</Project>
+      <Name>AccessLibliary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalAccessLibliary\ExternalAccessLibliary.csproj">
+      <Project>{28A38BB6-F407-4FAF-9083-5D2B18142403}</Project>
+      <Name>ExternalAccessLibliary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
