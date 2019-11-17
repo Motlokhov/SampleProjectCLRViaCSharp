@@ -47,6 +47,7 @@
 
     }
 
+
     /// <summary>
     /// Класс описания доступа к членам разных областей видимости
     /// </summary>
@@ -59,7 +60,7 @@
             publicClass._protectedInternalMember = "Access OK";
 
             //publicClass._protectedMember = "Access False"; Класс не наследует PublicClass
-            //publicClass._privateMember = "Access False"; Класс полностью закрыт для всех снаружи
+            //publicClass._privateMember = "Access False"; Член полностью закрыт для всех снаружи класса PublicClass
             //publicClass._privateProtectedMember = "Access False"; Класс не наследует PublicClass
         }
     }
