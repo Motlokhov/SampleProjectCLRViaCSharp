@@ -46,4 +46,22 @@
         }
 
     }
+
+    /// <summary>
+    /// Класс описания доступа к членам разных областей видимости
+    /// </summary>
+    public class AccessToMember: PublicClass
+    {
+        public void Access(PublicClass publicClass)
+        {
+            publicClass.PublicMember = "Access OK";
+            publicClass._internalMember = "Access OK";
+            publicClass._protectedInternalMember = "Access OK";
+
+            //publicClass._protectedMember = "Access False"; Класс не наследует PublicClass
+            //publicClass._privateMember = "Access False"; Класс полностью закрыт для всех снаружи
+            //publicClass._privateProtectedMember = "Access False"; Класс не наследует PublicClass
+        }
+    }
+
 }
