@@ -3,6 +3,16 @@
     /// <summary>
     /// Публичный класс: доступен всем сборкам снаружи
     /// </summary>
+    /// <example>
+    /// <para>------------Сборка|   In  |  Out  |</para>
+    /// <para>--Доступ из класса|In |Out|In |Out|</para>
+    /// <para>-----------------------------------</para>
+    /// <para>-----------private| - | - | - | - |</para>
+    /// <para>---------protected| + | - | + | - |</para>
+    /// <para>----------internal| + | + | - | - |</para>
+    /// <para>protected internal| + | + | + | - |</para>
+    /// <para>-private protected| + | - | - | - |</para>
+    /// </example>
     public class ClassForInheritance
     {
         /// <summary>
