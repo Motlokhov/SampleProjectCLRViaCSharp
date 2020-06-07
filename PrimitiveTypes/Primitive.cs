@@ -2,6 +2,9 @@
 
 namespace Types
 {
+    /// <summary>
+    /// Примитивные типы C#. Разрядность типа обозначает количество используемой памяти в битах.
+    /// </summary>
     public class Primitive
     {
         /// <summary>
