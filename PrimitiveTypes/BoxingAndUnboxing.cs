@@ -29,5 +29,16 @@ namespace PrimitiveTypes
                 array.Add(p); // упаковка значимого типа идобавление ссылки в ArrayList
             }
         }
+
+        /// <summary>
+        /// 1) Если переменная содержит ссылку на упакованный значимый тип, равна <see langword="null"/>, генерируется NullReferenceException
+        /// 2) Если ссылка указывает на объект, не являющийся упакованным значение требуемого значимого типа генерируется исключение InvalidCastException
+        /// </summary>
+        /// <param name="array"></param>
+        private void UnboxingPoint(ArrayList array)
+        {
+            var a = array[0]; //Получение ссылки на объект в куче
+            var p = (Point)a; //Распаковка значимого типа (копирование полей структуры)
+        }
     }
 }
