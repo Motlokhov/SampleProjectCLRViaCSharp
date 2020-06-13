@@ -8,6 +8,9 @@ using System.Windows;
 
 namespace PrimitiveTypes
 {
+    /// <summary>
+    /// 1)Компилятор автоматически создает код для упаковки значимых типов.
+    /// </summary>
     class BoxingAndUnboxing
     {
 
