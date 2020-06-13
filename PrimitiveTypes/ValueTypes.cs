@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PrimitiveTypes
+namespace Types
 {
     /// <summary>
     /// Структура это значимый тип данных

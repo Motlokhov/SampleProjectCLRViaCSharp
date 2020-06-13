@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace PrimitiveTypes
+namespace Types
 {
     /// <summary>
     /// 1)Компилятор автоматически создает код для упаковки значимых типов.
