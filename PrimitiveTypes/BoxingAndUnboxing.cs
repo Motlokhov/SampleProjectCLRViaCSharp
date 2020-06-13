@@ -40,5 +40,19 @@ namespace PrimitiveTypes
             var a = array[0]; //Получение ссылки на объект в куче
             var p = (Point)a; //Распаковка значимого типа (копирование полей структуры)
         }
+
+        /// <summary>
+        /// Пример InvalidCastExcepton при распаковке объекта из кучи
+        /// </summary>
+        private void SampleInvalidCastException()
+        {
+            int x = 5;
+            object o = x;
+            short q = (short)(int)o; //Ошибки не будет
+
+            // для правильной распаковки необходимо привести тип к int, а после преобразовывать к short
+            short y = (short)o; //Ошибка InvalidCastException
+        }
+
     }
 }
