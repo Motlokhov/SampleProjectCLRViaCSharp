@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoxingAndUnboxing.cs" />
+    <Compile Include="In_ref_out.cs" />
     <Compile Include="PlacementAndAlignment.cs" />
     <Compile Include="Primitive.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

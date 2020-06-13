@@ -54,5 +54,21 @@ namespace Types
             short y = (short)o; //Ошибка InvalidCastException
         }
 
+
+        private void SampleUnboxingAppropriation()
+        {
+            var i = 5;
+            object o = i;
+            var q = (int)o;
+            Console.WriteLine($"q={q} o={o}"); //q=5 o=5 упакованный и не упакованный тип равны
+            q = 6;                             //изменение значения не упакованого типа. Упакованный тип не знает об изменениях
+            Console.WriteLine($"q={q} o={o}"); //q=6 o=5 
+            o = q;                             // повторная упаковка упакованный тип получил изменения.
+            Console.WriteLine($"q={q} o={o}"); //q=6 o=6 
+        }
+
+
+
+
     }
 }
