@@ -16,7 +16,8 @@ namespace Types
             Console.WriteLine(ri);
 
             int oi;
-            OutFunction(out oi);
+            List<int> oList;
+            OutFunction(out oi,out oList);
             Console.WriteLine(oi);
 
 
@@ -47,9 +48,15 @@ namespace Types
             Console.WriteLine(refI);
         }
 
-        private void OutFunction(out int outI)
+        /// <summary>
+        /// Модификатор out требует обязательного изменения значения переменной внутри функции
+        /// Входной параметр с модификатором out может быть не инициализирован
+        /// </summary>
+        /// <param name="outI"></param>
+        private void OutFunction(out int outI,out List<int> outList)
         {
             outI = 6;
+            outList = new List<int>();
             Console.WriteLine(outI);
         }
 
