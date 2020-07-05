@@ -140,6 +140,22 @@ namespace NullableValueTypes
             return false;
         }
 
-        
+        /// <summary>
+        /// Логика сравнения и равенства.
+        /// Если любой из операндов равен <see langword="null"/>, то оперенды не равны, иначе сравниваем значения как обычно.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="firstOperand">Первый операнд</param>
+        /// <param name="secondOperand">Второй операнд</param>
+        /// <param name="equationComparisonOperator">Функция сравнения или равенства</param>
+        /// <returns>Результат сравнения или равенства</returns>
+        private bool EquationComparisonLogic<T>(T? firstOperand,T? secondOperand,Func<T,T,bool> equationComparisonOperator) where T:struct
+        {
+            if (!firstOperand.HasValue || !secondOperand.HasValue)
+            {
+                return false;
+            }
+            return equationComparisonOperator.Invoke(firstOperand.Value, secondOperand.Value);
+        }
     }
 }
