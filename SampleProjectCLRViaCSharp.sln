@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part 27 AsyncOperaton", "Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAsyncOperation", "SimpleAsyncOperation\SimpleAsyncOperation.csproj", "{9A6DE8E5-109D-4718-90F1-3882068E68B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCancelationToken", "SampleCancelationToken\SampleCancelationToken.csproj", "{36630DFE-E3FA-4188-A95A-FF24CF8003F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLinkedCancelationToken", "SampleLinkedCancelationToken\SampleLinkedCancelationToken.csproj", "{C7BF1F79-EDC0-40D4-A4BC-36A5EEE31125}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,14 @@ Global
 		{9A6DE8E5-109D-4718-90F1-3882068E68B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A6DE8E5-109D-4718-90F1-3882068E68B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A6DE8E5-109D-4718-90F1-3882068E68B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36630DFE-E3FA-4188-A95A-FF24CF8003F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36630DFE-E3FA-4188-A95A-FF24CF8003F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36630DFE-E3FA-4188-A95A-FF24CF8003F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36630DFE-E3FA-4188-A95A-FF24CF8003F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BF1F79-EDC0-40D4-A4BC-36A5EEE31125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BF1F79-EDC0-40D4-A4BC-36A5EEE31125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BF1F79-EDC0-40D4-A4BC-36A5EEE31125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BF1F79-EDC0-40D4-A4BC-36A5EEE31125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +96,8 @@ Global
 		{E504BB25-C862-48D3-AF4F-152528823823} = {BAB89D91-0267-4231-A757-364EA1F69397}
 		{1794F000-4937-4DA4-8219-8365FA0B4E45} = {B95D5F5C-3934-4CDB-BDF5-42FFD5B69E87}
 		{9A6DE8E5-109D-4718-90F1-3882068E68B1} = {1794F000-4937-4DA4-8219-8365FA0B4E45}
+		{36630DFE-E3FA-4188-A95A-FF24CF8003F0} = {1794F000-4937-4DA4-8219-8365FA0B4E45}
+		{C7BF1F79-EDC0-40D4-A4BC-36A5EEE31125} = {1794F000-4937-4DA4-8219-8365FA0B4E45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B69B9F8B-2E29-4786-BA29-37EF9F2855F1}
